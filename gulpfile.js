@@ -6,8 +6,6 @@ var gulp = require('gulp');
 var runSequence = require('run-sequence');
 var sass = require('gulp-sass');
 
-var projectName = 'sir';
-
 gulp.task('styles', function() {
     return gulp.src('./sass/style.scss')
         // Compile SASS files
