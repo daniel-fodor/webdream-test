@@ -10,7 +10,7 @@ npm install
 gulp watch
 ```
 
-### Sima egyszeri SCSS fordítás
+### Egyszeri SCSS fordítás
 ```
 gulp styles
 ```
