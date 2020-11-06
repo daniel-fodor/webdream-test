@@ -1,0 +1,130 @@
+/* Page Header style */
+
+.page-header {
+    padding: 22px 0 16px 0;
+    text-align: center;
+    border-bottom: 1px solid #7D7D7D;
+    &__inner {
+        @extend .container-fluid;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        display: inline-block;
+        transition: all .25s ease-in-out;
+        @media (max-width: 767px) {
+            img {
+                max-width: 160px;
+            }
+        }
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    &__navbar {
+        display: flex;
+        @media (max-width: 1200px) {
+            display: none;
+        }
+    }
+    &__info-list {
+        display: flex;
+        align-items: center;
+        position: relative;
+        li {
+            margin-right: 30px;
+            a {
+                color: #{$link-color};
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                svg {
+                    display: inline-block;
+                    margin-right: 6px;
+                }
+                .mail-icon {
+                    margin-right: 8px;
+                }
+            }
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            right: 0;
+            background: #7D7D7D;
+            height: 56px;
+            width: 1px;
+        }
+    }
+    &__social-list {
+        display: flex;
+        align-items: center;
+        padding-left: 33px;
+        li {
+            margin-right: 25px;
+            a {
+                svg {
+                    display: inline-block;
+                    height: 19px;
+                    width: auto;
+                }
+            }
+        }
+    }
+    &__lang {
+        display: flex;
+        align-items: center;
+        margin-right: 36px;
+        .dropdown-toggle {
+            font-size: 14px;
+            color: #7D7D7D;
+            letter-spacing: 2px;
+            font-family: 'Montserrat', sans-serif;
+            &::after {
+                border: none;
+                background: url("#{$imgUrl}select-arrow.png") no-repeat;
+                width: 14px;
+                height: 9px;
+                position: relative;
+                top: 4px;
+            }
+        }
+    }
+    &__cta {
+        font-family: 'Montserrat', sans-serif;
+        display: inline-flex;
+        align-items: center;
+        height: 56px;
+        padding: 0 3.05rem;
+        color: #fff;
+        font-weight: 700;
+        font-size: 14px;
+        border-radius: 10px;
+        text-transform: uppercase;
+        background: linear-gradient(116.44deg, #3D50BD 16.64%, #06A6EC 83.39%);
+        .heart-icon {
+            display: inline-block;
+            background: url("#{$imgUrl}heart-icon.png") no-repeat;
+            width: 22px;
+            height: 22px;
+            margin-right: 5px;
+            margin-top: 3px;
+        }
+        &:hover {
+            color: #fff;
+        }
+        svg {
+            display: inline-block;
+            margin-right: 6px;
+        }
+    }
+}
+
+.hambi-btn {
+    background: url("#{$imgUrl}hambi.png") no-repeat;
+    background-size: 32px 20px;
+    background-position: center;
+    width: 50px;
+    height: 40px;
+}

@@ -1,0 +1,34 @@
+/* config */
+
+@import "base/config/variables";
+@import "base/config/colors";
+@import "utils/mixins";
+
+/* vendors */
+
+@import "vendor/bootstrap/mixins";
+@import "vendor/bootstrap/bootstrap-grid.scss";
+@import "vendor/bootstrap/dropdown.scss";
+
+/* base */
+
+@import "base/reset";
+@import "base/base";
+
+/* components  */
+
+@import "components/button";
+@import "components/forms/forms";
+
+/* layout */
+
+@import "layout/partials/header";
+@import "layout/partials/footer";
+
+/* pages */
+
+@import "layout/contact";
+
+/* print */
+
+@import "helper/print";

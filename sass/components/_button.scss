@@ -1,0 +1,32 @@
+%btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    padding: 0 1.1rem;
+    border-radius: 26px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.btn--primary {
+    @extend %btn;
+    color: #fff;
+    background: #36B49E;
+    box-shadow: -5px 5px 0 rgba(#EFE7D7, 0.9);
+    .icon {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        margin-right: 8px;
+        path {
+            fill: #fff;
+        }
+    }
+    span {
+        white-space: nowrap;
+    }
+    &:hover {
+        color: #fff;
+    }
+}

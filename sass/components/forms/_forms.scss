@@ -1,0 +1,129 @@
+@import 'input.scss';
+@import 'select.scss';
+
+form,
+.form {
+    position: relative;
+
+    &--order {
+        margin-bottom: 20px;
+    }
+
+    label {
+        margin-bottom: 0;
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+    }
+
+    .form-input {
+        position: relative;
+    }
+
+    .form-inputs {
+        display: flex;
+        align-items: center;
+
+        input {
+            margin-bottom: 0;
+        }
+    }
+
+    .separator {
+        color: #BABABA;
+        display: inline-block;
+        font-size: 20px;
+        height: 20px;
+        margin: 0 10px;
+        position: relative;
+        top: -10px;
+
+        @media (min-width: 1100px) {
+            margin: 0 25px;
+        }
+    }
+}
+
+#cardNumber {
+    padding-right: 85px;
+}
+
+.credit-card-thumbs {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translate(0, -50%);
+
+    img {
+        width: 25px;
+        margin-right: 6px;
+    }
+}
+
+// custom checkbox
+.checkbox-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    line-height: 1;
+    padding: 0 5px;
+
+    @media (min-width: 1100px) {
+        padding: 0 10px;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+        opacity: 0;
+    }
+
+    input[type="checkbox"] + label {
+        color: #333333;
+        font-size: 0.95rem;
+        display: inline-block;
+        line-height: 1;
+        position: relative;
+        cursor: pointer;
+        padding: 0;
+        vertical-align: middle;
+    }
+
+    input[type="checkbox"]+label:before {
+        content: '';
+        cursor: pointer;
+        background: #fff;
+        border: 1px solid #666;
+        border-radius: 4px;
+        display: inline-block;
+        margin-right: 7px;
+        height: 16px;
+        width: 16px;
+        position: relative;
+        text-align: center;
+        vertical-align: middle;
+        top: -1px;
+    }
+
+    input[type="checkbox"]+label:after {
+        content: '';
+        opacity: 0;
+        transition: all 0.15s linear;
+    }
+
+    input[type="checkbox"]:checked+label:before {
+        background: #333;
+    }
+
+    input[type="checkbox"]:checked+label:after {
+        content: "\2713";
+        color: #fff;
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        opacity: 1;
+        left: 4px;
+        top: 1px;
+        transform: scale(1);
+    }
+}

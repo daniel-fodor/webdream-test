@@ -1,0 +1,61 @@
+/* Base style */
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background: #{$body-bg};
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    font-size: 16px;
+    font-weight: 400;
+    @media (max-width: 767px) {
+        font-size: 14px;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: inherit;
+    margin: 0;
+    font-weight: 400;
+}
+
+p,
+blockquote {
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+a {
+    color: $link-color;
+    transition: all .3s ease-in-out;
+    font-size: 1rem;
+    text-decoration: none;
+    &:hover {
+        color: $link-color;
+    }
+}
+
+button {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    transition: all .3s ease-in-out;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

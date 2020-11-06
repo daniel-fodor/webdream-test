@@ -1,0 +1,26 @@
+input[type="text"],
+input[type="email"],
+input.form-control {
+    background: none;
+    border: 1px solid #BABABA;
+    border-radius: 7px;
+    font-size: 16px;
+    @include placeholder(#333333);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    height: 50px;
+    padding: 0 17px;
+    margin-bottom: 14px;
+
+    &:active,
+    &:focus {
+        outline: none;
+    }
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+}

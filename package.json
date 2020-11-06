@@ -1,0 +1,23 @@
+{
+  "name": "local-minifier",
+  "version": "0.1.0",
+  "description": "A local environment to minify CSS, JS, & HTML files",
+  "license": "Apache-2.0",
+  "author": "Daniel Fodor",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "latest",
+    "gulp-csso": "^2.0.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-zip": "^5.0.1",
+    "run-sequence": "^1.2.2"
+  },
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "browserslist": [
+    "last 2 version",
+    "IE >= 10"
+  ]
+}
